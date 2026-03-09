@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ashley Aguilar | Business Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="mainHeader">
+        <h1>Ashley Aguilar</h1>
+        <h5>Business Card</h5>
+    </div>
+
+    <div class="cardWrap">
+        <div class="card" tabindex="0" onclick="toggleFlip(event)" onkeydown="tabFlip(event)">
+            <div class="flipCard" id="flipCard">
+
+                <div class="front">
+                    <div class="headshot">
+                        <img src="headshot.jpg" alt="Headshot of Ashley Aguilar" width="100px" height="auto">
+                    </div>
+                    <h1>Ashley Aguilar</h1>
+                    <h3>Student</h3>
+                    <p>California State University Dominguez Hills</p>
+                    <p>Computer Science</p>
+                    <button type="button" onclick="window.location.href='https://www.linkedin.com/in/ashleyaguilar-profile/'">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/LinkedIn_2021.svg/1200px-LinkedIn_2021.svg.png">
+                    </button>
+                </div>
+
+                <div class="back">
+                    <h3>Bio:</h3>
+                    <p>
+                        I am currently a senior in college majoring in Computer Science. <br>
+                        I am enrolled in a web design course, which is why I'm making this card. <br>
+                        Outside of school I enjoy going on fun adventures and exploring nature. <br>
+                        That's why I am eagerly waiting for the Spring and Summer seasons.
+                    </p>
+                    <h3>Contact:</h3>
+                    <p>ashleyaguilar_example_notreal@gmail.com</p>
+                    <p>(123) 456-7890</p>
+                    <button type="button" onclick="window.location.href='mailto:ashleyaguilar_example_notreal@gmail.com'">
+                        <img src="https://cdn-icons-png.flaticon.com/512/9916/9916040.png">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="instruction">
+        <h5>click card to flip</h5>
+    </div>
+
+    <script>
+        function toggleFlip(e) {
+          if (e.target.closest('button, a')) return;
+          document.getElementById('flipCard').classList.toggle('flipped');
+        }
+
+        function tabFlip(e) {
+            if (e.target !== e.currentTarget) return;
+
+            if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            document.getElementById('flipCard').classList.toggle("flipped");
+            }
+        }
+    </script>
+</body>
+</html>
