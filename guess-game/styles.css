@@ -1,0 +1,45 @@
+body, button {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+}
+
+body {
+    padding-top: 100px;
+    display: grid;
+    place-items: center;
+    background-image: url("https://img.freepik.com/premium-vector/vector-white-question-marks-blue-background_940471-1743.jpg?semt=ais_hybrid&w=740&q=80");
+}
+
+h1 {
+    margin: 0;
+}
+
+.gameCard {
+    border: 1px solid rgb(169, 169, 169);
+    border-radius: 50px;
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(240, 255, 255, 0.691);
+    min-width: 400px;
+    width: 50%;
+    height: auto;
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+button {
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgb(2, 200, 255);
+    box-shadow: 1px 1px 2px rgb(0, 0, 0);
+    transition: transform 0.25s ease-in-out, background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out, border-radius 0.25s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    border-radius: 5px;
+    background-color: rgb(156, 231, 244);
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+}
