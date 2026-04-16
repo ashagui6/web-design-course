@@ -1,0 +1,142 @@
+body {
+    display: grid;
+    justify-content: center;
+    background-image: url(https://previews.123rf.com/images/dashtik/dashtik1707/dashtik170700187/82897680-seamless-art-tools-doodle-elements-pattern-vector-illustration.jpg);
+    background-size: 900px;
+    background-color: rgb(66, 33, 16);
+    background-blend-mode: multiply;
+    color: white;
+    width: 100%;
+}
+
+h1, p {
+    text-align: center;
+    text-shadow: 1px 1px 10px black;
+}
+
+canvas {
+    margin-bottom: 10px;
+    width: 700px;
+    height: 700px;
+    border-bottom: 30px solid transparent;
+    border-top: 30px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 15px rgb(0, 0, 0);
+    border-image: url(https://static.vecteezy.com/system/resources/thumbnails/006/793/287/small/wood-texture-pattern-light-brown-design-background-vector.jpg) 30;
+}
+
+.clearButton {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+button {
+    border: 2px solid red;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px black;
+    text-shadow: 1px 1px 2px rgba(46, 46, 46, 0.555);
+
+    background-color: rgb(255, 97, 97);
+    width: 90px;
+    height: auto;
+    font-size: large;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out
+}
+
+button:hover {
+    background-color: red;
+    transform: scale(1.15);
+}
+
+.nav {
+    width: 700px;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity .5s;
+    background: linear-gradient(to right, rgb(111, 60, 21), rgb(75, 26, 26));
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid rgba(74, 70, 70, 0.355);
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+.nav div, button, input {
+    margin: 5px;
+}
+
+.clr {
+    height: 35px;
+    width: 35px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 3px solid rgb(168, 126, 95);
+    transition: transform .2s;
+    box-shadow: 1px 1px 5px black;
+}
+
+.clr:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.clr:nth-child(1){
+    background-color: black;
+}
+
+.clr:nth-child(2){
+    background-color: rgb(87, 34, 34);
+}
+
+.clr:nth-child(3){
+    background-color: red;
+}
+
+.clr:nth-child(4){
+    background-color: orange;
+}
+
+.clr:nth-child(5){
+    background-color: yellow;
+}
+
+.clr:nth-child(6){
+    background-color: green;
+}
+
+.clr:nth-child(7){
+    background-color: blue;
+}
+
+.clr:nth-child(8){
+    background-color: purple
+}
+
+.nav input:hover {
+    cursor: pointer;
+}
+
+input[type="color"] {
+    width: 60px;
+    height: 40px;
+    border: 3px solid rgb(168, 126, 95);
+    border-radius: 20%;
+    box-shadow: 1px 1px 5px black;
+}
+
+#brushSizeOut {
+    color: white;
+    font-weight: bold;
+    font-size: 15pt;
+}
+
+#brushSizeIn {
+    cursor: ew-resize;
+    accent-color: rgb(168, 126, 95);
+}

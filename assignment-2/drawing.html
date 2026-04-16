@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Drawing App</h1>
+        
+        <canvas id="canvas" width="700" height="700">
+            Browser does not support the canvas element.
+        </canvas>
+
+        <div class="nav">
+            <div class="clr" data-clr="black"></div>
+            <div class="clr" data-clr="brown"></div>
+            <div class="clr" data-clr="red"></div>
+            <div class="clr" data-clr="orange"></div>
+            <div class="clr" data-clr="yellow"></div>
+            <div class="clr" data-clr="green"></div>
+            <div class="clr" data-clr="blue"></div>
+            <div class="clr" data-clr="purple"></div>
+            <input type="color" value="#FFFFF" id="colorPicker">
+            <input type="range" name="brushSizeIn" id="brushSizeIn" value="5" 
+            min="1" max="9" oninput="brushSizeOut.value = brushSizeIn.value">
+            <output id="brushSizeOut">5</output>
+        </div>
+
+        <div class="clearButton">
+            <button type="button" id="clearButton">Clear</button>
+        </div>
+
+        <p>Click and drag to draw</p>
+    </div>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
