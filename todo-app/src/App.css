@@ -1,0 +1,135 @@
+html {
+  background-image: url(https://media.istockphoto.com/id/468574234/photo/image-of-colorful-sticky-notes-on-cork-bulletin-board.jpg?s=612x612&w=0&k=20&c=1-yESKHKIxUZFLEwG9FlnxS9EVhWmH59mC7gth_idrs=);
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-color: rgb(88, 88, 88);
+  color: rgb(255, 255, 255);
+  background-size: cover;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  text-shadow: 1px 1px 10px rgb(0, 0, 0);
+  margin-top: 0;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  box-shadow: 1px 1px 15px rgb(0, 0, 0);
+  color: white;
+}
+
+.body {
+  margin: 0 auto;
+  width: 800px;
+  height: 900px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 1px 1px 5px black;
+  background-color: rgba(0, 0, 0, 0.622);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid black;
+}
+
+form {
+  text-shadow: 1px 1px 10px black;
+  padding-top: 20px;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+  width: 50%;
+  align-items: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(78, 78, 78);
+}
+
+h2 {
+  padding: 10px;
+}
+
+.textBox {
+  border-radius: 15px;
+  width: 90%;
+  height: 40px;
+  border: none;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+  transition: ease-in-out 0.5s;
+}
+
+.textBox:hover {
+  transform: scale(1.005);
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+.textBox:focus {
+  outline: 2px solid rgb(89, 12, 12);
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+.addTask {
+  width: 12%;
+  height: 30px;
+  background-color: rgb(96, 96, 94);
+  border-radius: 10px;
+  border: none;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.addTask:hover {
+  transform: scale(1.03);
+  border: 1px solid rgb(4, 24, 62);
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+.addTask:active {
+  transform: translateY(4px);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  color: black;
+}
+
+.task {
+  width: 500px;
+  height: 50px;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, 0.136);
+  border-radius: 20px;
+  background-color: rgb(155, 250, 1);
+  box-shadow: 1px 1px 10px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  padding: 0 10px;
+}
+
+.deleteTask {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  width: 25px;
+  height: 25px;
+  background-image: url(https://uxwing.com/wp-content/themes/uxwing/download/user-interface/red-trash-can-icon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+  transition: ease-in-out 0.2s;
+}
+
+.deleteTask:hover {
+  transform: scale3d(0.8, 0.8, 0.8);
+  cursor: pointer;
+}
+
+.deleteTask:active {
+  transform: translateY(4px);
+}
